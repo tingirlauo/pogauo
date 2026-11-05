@@ -3,18 +3,25 @@
    "how to change link color." */
 
 body {
-  background-color: lightpink;
-   color: white;
    height: 100vh;
    width: 100vw;
    margin: 0;
+   font-size: 1rem;
    font-family: "Dosis";
    letter-spacing: 0.04rem;
+   background-color: #ffffff;
+opacity: 1;
+   
+background-image:  repeating-linear-gradient(to right, transparent 0, transparent 1px, #ffffff 1px, #ffffff 3px, transparent 3px, transparent 4px), repeating-linear-gradient(to bottom, transparent 0, transparent 1px, #ffffff 1px, #ffffff 3px, transparent 3px, transparent 4px), linear-gradient(to bottom, #e1b2b2 0.36px, transparent 0.36px), linear-gradient(to right, #e1b2b2 0.36px, transparent 0.36px) ;
+background-size: 100% 100%, 100% 100%, 20px 20px, 20px 20px;
+background-position: 0 0, 0 0, 0 -0.12px, -0.12px 0;
+   z-index: -30px;
 }
 
 
 
 .site-wrapper {
+   z-index: 10px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -22,14 +29,26 @@ body {
    position: relative;
 }
 
-.content-wrapper {
-   padding: 20px;
+header {
+   color: darkseagreen;
 }
 
 nav {
    display: flex;
    gap: 30px;
 }
+
+.content-wrapper {
+   margin-top: 2rem;
+   background-color: pink;
+   border-radius: 30px;
+   padding: 20px;
+}
+
+.top {
+  text-align: center;
+}
+
 
 .socials {
    display: flex;
@@ -44,19 +63,29 @@ nav {
 }
 
 .button {
-   display: flex;
+   display: inline-flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: 20px;
-   padding: 15px;
-   background-color: hotpink;
-   border: black 2px dashed;
-   border-radius: 25px;
+   margin-bottom: 2rem;
+   padding: 1rem;
+   background-color: #71ae6f;
+   border: black 0.05rem solid;
+   border-radius: 35px;
    min-width: 170px;
-   height: 30px;
+   height: 25px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.button a {
+.button img {
+  
+}
+
+.button > a {
    text-decoration: none;
    color: white;
+  
+}
+
+.button:hover {
+   transform: scale(1.10);
 }
