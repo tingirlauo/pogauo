@@ -4,6 +4,59 @@
 
 body {
   background-color: lightpink;
-  font-family: Verdana;
-   color: green;
+   color: white;
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   font-family: "Dosis";
+   letter-spacing: 0.04rem;
+}
+
+
+
+.site-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.content-wrapper {
+   padding: 20px;
+}
+
+nav {
+   display: flex;
+   gap: 30px;
+}
+
+.socials {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+   padding: 15px;
+   background-color: hotpink;
+   border: black 2px dashed;
+   border-radius: 25px;
+   min-width: 170px;
+   height: 30px;
+}
+
+.button a {
+   text-decoration: none;
+   color: white;
 }
